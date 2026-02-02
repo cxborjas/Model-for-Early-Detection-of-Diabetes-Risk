@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# virtual environments
+.venv/
+env/
+venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# PyInstaller
+*.manifest
+*.spec
+
+# C extensions
+*.so
+
+# Dataset (keep folder but ignore any local large copies if you create tmp data)
+# By default we keep dataset/ tracked. If you generate local derived files, add them here.
+# dataset/
+
+# Local settings
+local_settings.py

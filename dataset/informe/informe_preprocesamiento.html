@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Informe de preprocesamiento - Riesgo de diabetes</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2, h3 { color: #333333; }
+        .resumen { background-color: #f5f5f5; padding: 10px 15px; border-radius: 5px; margin-bottom: 20px; }
+        table { border-collapse: collapse; margin-bottom: 20px; width: 100%; font-size: 13px; }
+        th, td { border: 1px solid #dddddd; padding: 6px 8px; text-align: left; }
+        th { background-color: #f0f0f0; }
+        img { max-width: 600px; display: block; margin-bottom: 20px; }
+        .nota { font-size: 12px; color: #666666; }
+    </style>
+</head>
+<body>
+<h1>Informe de preprocesamiento del dataset de riesgo de diabetes</h1>
+<div class="resumen">
+    <p><strong>Cantidad de registros:</strong> 253680</p>
+    <p><strong>Cantidad de variables:</strong> 13</p>
+</div>
+<h2>Variables incluidas en el modelo</h2>
+<table class="dataframe table table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th>variable</th>
+      <th>tipo_dato</th>
+      <th>valores_nulos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>estado_diabetes</td>
+      <td>int64</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>imc</td>
+      <td>float64</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>rango_edad</td>
+      <td>float64</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>sexo</td>
+      <td>float64</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>actividad_fisica_reciente</td>
+      <td>float64</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>consumo_frutas</td>
+      <td>float64</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>consumo_verduras</td>
+      <td>float64</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>fumador_historico</td>
+      <td>float64</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>consumo_alcohol_elevado</td>
+      <td>float64</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>salud_general</td>
+      <td>float64</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>dias_mala_salud_fisica</td>
+      <td>float64</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>dias_mala_salud_mental</td>
+      <td>float64</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>dificultad_caminar</td>
+      <td>float64</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Estadísticas descriptivas</h2>
+<table class="dataframe table table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+      <th>mean</th>
+      <th>std</th>
+      <th>min</th>
+      <th>25%</th>
+      <th>50%</th>
+      <th>75%</th>
+      <th>max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>estado_diabetes</th>
+      <td>253680.0</td>
+      <td>0.157588</td>
+      <td>0.364355</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>imc</th>
+      <td>253680.0</td>
+      <td>28.382364</td>
+      <td>6.608694</td>
+      <td>12.0</td>
+      <td>24.0</td>
+      <td>27.0</td>
+      <td>31.0</td>
+      <td>98.0</td>
+    </tr>
+    <tr>
+      <th>rango_edad</th>
+      <td>253680.0</td>
+      <td>8.032119</td>
+      <td>3.054220</td>
+      <td>1.0</td>
+      <td>6.0</td>
+      <td>8.0</td>
+      <td>10.0</td>
+      <td>13.0</td>
+    </tr>
+    <tr>
+      <th>sexo</th>
+      <td>253680.0</td>
+      <td>0.440342</td>
+      <td>0.496429</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>actividad_fisica_reciente</th>
+      <td>253680.0</td>
+      <td>0.756544</td>
+      <td>0.429169</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>consumo_frutas</th>
+      <td>253680.0</td>
+      <td>0.634256</td>
+      <td>0.481639</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>consumo_verduras</th>
+      <td>253680.0</td>
+      <td>0.811420</td>
+      <td>0.391175</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>fumador_historico</th>
+      <td>253680.0</td>
+      <td>0.443169</td>
+      <td>0.496761</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>consumo_alcohol_elevado</th>
+      <td>253680.0</td>
+      <td>0.056197</td>
+      <td>0.230302</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>salud_general</th>
+      <td>253680.0</td>
+      <td>2.511392</td>
+      <td>1.068477</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>3.0</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>dias_mala_salud_fisica</th>
+      <td>253680.0</td>
+      <td>4.242081</td>
+      <td>8.717951</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>30.0</td>
+    </tr>
+    <tr>
+      <th>dias_mala_salud_mental</th>
+      <td>253680.0</td>
+      <td>3.184772</td>
+      <td>7.412847</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>30.0</td>
+    </tr>
+    <tr>
+      <th>dificultad_caminar</th>
+      <td>253680.0</td>
+      <td>0.168224</td>
+      <td>0.374066</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Gráficas descriptivas</h2>
+<h3>Distribución de estado_diabetes</h3><img src="dist_estado_diabetes.png" alt="Distribución estado_diabetes"><h3>Histograma de IMC</h3><img src="hist_imc.png" alt="Histograma IMC">
+<p class="nota">
+    Nota: este informe corresponde al dataset ya preprocesado, con la variable
+    <code>estado_diabetes</code> binarizada (0 = sin riesgo, 1 = riesgo de prediabetes/diabetes)
+    y utilizando únicamente factores individuales seleccionados para el modelo preventivo.
+</p>
+</body>
+</html>

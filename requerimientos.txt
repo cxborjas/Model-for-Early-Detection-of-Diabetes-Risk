@@ -1,0 +1,12 @@
+# Core Data Science Libraries
+pandas>=2.3.0
+numpy>=2.3.0
+matplotlib>=3.10.0
+scikit-learn>=1.7.0
+
+# Machine Learning
+catboost>=1.2.0
+joblib>=1.5.0
+
+# GUI Framework
+PyQt5>=5.15.11
