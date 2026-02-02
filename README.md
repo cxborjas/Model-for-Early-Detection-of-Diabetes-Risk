@@ -22,6 +22,11 @@
 
 **Correo electrónico del autor de correspondencia:** jegonzalez@mailes.ueb.edu.ec
 
+### Revisor Técnico / Technical Reviewer
+**Nombre:** Claudio Borja Saltos  
+**Rol:** Revisor del código para el modelo / Model Code Reviewer
+**ORCID:** [https://orcid.org/0009-0008-6938-9399](https://orcid.org/0009-0008-6938-9399)
+
 ---
 
 ## Descripcion del Proyecto
